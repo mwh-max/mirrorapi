@@ -1,0 +1,12 @@
+{
+  "name": "mirror-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

@@ -1,0 +1,145 @@
+/* Color Theme: Ink & Mist */
+:root {
+  --background: #f5f7fa;
+  --text: #1a1a1a;
+  --accent: #364fc7;
+  --button-bg: #0a2f51;
+  --button-text: #ffffff;
+  --box-bg: #fbfbfd;
+  --box-border: #e0e4ed;
+}
+
+.bubble {
+  background-color: var(--color-overlay-bg);
+  color: var(--color-overlay-text);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--font-base);
+  border-radius: var(--radius-bubble);
+  transition: var(--transition-fade);
+}
+
+/* Font Imports */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.75;
+}
+
+/* Container Layout */
+.landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  background-color: #ffffff;
+  max-width: 720px;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.03);
+  border: 1px solid var(--box-border);
+}
+
+/* Typography */
+h1 {
+  font-family: 'Newsreader', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p.lede {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1.75rem;
+}
+
+/* Section Labels */
+.section-label {
+  font-family: 'Newsreader', serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* Box Styling */
+.box-secondary {
+  background-color: var(--box-bg);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+a.button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 3px;
+  margin-top: 0.75rem;
+}
+
+/* Small Print */
+small {
+  font-size: 0.85rem;
+  color: #444;
+  display: block;
+  margin-top: 0.75rem;
+}
+
+#reflection {
+    position:fixed;
+    top:1.25rem;
+    right:1.25rem;
+    background:#fbfbfd;
+    color: #222;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0.6rem 1rem;
+    border: 1px solid #364fc7;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    opacity:0;
+    transition: opacity 0.4s ease;
+    z-index: 1000;
+}
+
+#mirror-overlay {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #1a1a1a;
+  padding: 0.75rem 1.25rem;
+  border-radius: 16px;
+  border: 1px solid #d6dce2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  max-width: 300px;
+  z-index: 1000;
+}
+
+.toggle-mode {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  z-index: 1000;
+}
+
+.toggle-mode input {
+  margin-right: 0.5rem;
+}

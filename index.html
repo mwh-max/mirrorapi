@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirror API – Privacy Reflection Tool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="landing-container">
+    <div class="content-wrapper">
+      <h1>Mirror API</h1>
+      <a href="about.html" class="internal-link">About This Build</a>
+      <p class="lede">See what websites observe. Scroll speed, cursor trails, click pauses visualized in real time, explained with nuance.</p>
+
+      <section class="section-label">INTERPRETATION</section>
+      <div class="box-secondary">
+        <p>Mirror API shows how tracking scripts might interpret your everyday scrolling, hesitating or even moving your cursor. It doesn’t block them; it shows how they work.</p>
+      </div>
+
+      <label class="toggle-mode">
+        <input type="checkbox" id="ghostToggle" />
+      <span>Ghost View</span>
+      </label>
+
+      <section class="section-label">DISTINCTION</section>
+      <div class="box-secondary">
+        <p><strong>Some privacy extensions block scripts.</strong> Mirror API lets you <em>see yourself being seen</em>.</p>
+      </div>
+
+      <section class="section-label">ACCESS</section>
+      <div class="box-secondary">
+        <a href="#" id="demo-extension" class="button">Try the Demo Extension</a>
+        <p><small>This page uses Google Fonts to illustrate passive external requests, a conscious nod to what’s often tracked without consent.</small></p>
+      </div>
+    </div>
+  </main>
+  <div id="reflection">
+  <!-- Reflection message will appear here -->
+</div>
+</body>
+<script type="module" src="main.js"></script>
+</html>
